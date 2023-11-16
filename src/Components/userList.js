@@ -1,13 +1,13 @@
 import { allUser } from "./allUser"
 import User from "./user"
 
-const UserList = ()=>{
-
+const UserList = ( {userList})=>{
+     console.log(userList)
     return(
     <>
     <div className = "App">
       {
-        allUser.map((element,index)=>
+        userList.map((element,index)=>
              {
             return <User  {...element} key ={index} />
              }
@@ -16,7 +16,7 @@ const UserList = ()=>{
     </div>
     </>
 
-    )
+    ) 
 }
 
 export default UserList

@@ -10,13 +10,13 @@ const Navbar = () => {
           </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="navbar-nav">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to='/'>
                 Dashboard
               </Link>
-              <Link className="nav-link" to="/adduser">
+              <Link className="nav-link" to='/adduser'>
                 Add User
               </Link>
-              <Link className="nav-link" to="/edituser">
+              <Link className="nav-link" to='/edituser'>
                 Edit User  
               </Link>
 
