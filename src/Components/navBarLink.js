@@ -27,7 +27,7 @@ import { useNavigate } from 'react-router-dom';
                     component="div"
                     sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                 >
-                    nav
+                    User CRUD
                 </Typography>
                 <Box sx={{display: { xs: 'none', sm: 'block' } }}>
                 
@@ -48,6 +48,7 @@ import { useNavigate } from 'react-router-dom';
                         navigate('/edituser')
                       }}
                 >Edit User</Button>
+                
                 </Box>
                 </Toolbar>
 
