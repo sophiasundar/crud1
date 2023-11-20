@@ -29,7 +29,7 @@ const AddUser = ({setuserList,userList})=>{
 
       <TextField 
         sx={{ width: "50%", margin: "0% 25% 2% 25%"}} 
-      id="outlined-basic" label="Pic: give as img link" variant="outlined" 
+      id="outlined-basic" label="Image: Give As Image Link" variant="outlined" 
         value={pic}
         onChange={(e)=>{
           setPic(e.target.value)
@@ -56,7 +56,7 @@ const AddUser = ({setuserList,userList})=>{
        
       <Stack direction="row" spacing={2}>
         
-      <Button sx={{marginLeft:"40%"}} 
+      <Button sx={{marginRight:"200%"}} 
        variant="contained"
        onClick={()=>{
           const user= {
@@ -71,14 +71,13 @@ const AddUser = ({setuserList,userList})=>{
        }}
        >Add User</Button>  
 
-      <Button sx={{marginLeft:"30%", width: "8.5%"}}  
+      <Button sx={{marginLeft:"-50%", width: "8.5%"}}  
        variant="contained"
         onClick={()=>{
            navigate('/')
         }}
        >Back</Button>
-
-
+      
       </Stack>
        
             

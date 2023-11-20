@@ -19,7 +19,7 @@ import Button from '@mui/material/Button';
 
 
             <div>
-            <Button sx={{marginLeft:"-150%", marginTop:"850%", width: "10%"}}  
+            <Button sx={{marginLeft:"-170%", marginTop:"850%", width: "10%"}}  
                variant="contained"
                    onClick={()=>{
                     navigate('/')

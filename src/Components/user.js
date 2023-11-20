@@ -8,9 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
 
-const User =({name,pic,email,phone,id}) =>{
-
-  // const navigate = useNavigate()
+const User =({name,pic,email,phone,id,deleteButton,editButton}) =>{
 
   return(
       <>
@@ -35,7 +33,9 @@ const User =({name,pic,email,phone,id}) =>{
                  <CardContent>
           <Typography paragraph>Email: {email}</Typography>
           <Typography paragraph>Phone.no: {phone}</Typography>
-
+               {editButton}
+                {deleteButton}
+               
         </CardContent>
       </Card>
       

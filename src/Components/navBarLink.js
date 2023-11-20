@@ -9,12 +9,13 @@ import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
 
-    function Navbarlink(){
-        const navigate =useNavigate()
+    function Navbarlink({mode,setMode}){
 
+        const navigate =useNavigate()
+        
             return(
                 <>
-
+                  
                 <Box sx={{ display: 'flex', marginBottom:"5%"}}>
 
                 <CssBaseline />
@@ -48,6 +49,12 @@ import { useNavigate } from 'react-router-dom';
                         navigate('/edituser')
                       }}
                 >Edit User</Button>
+
+                <Button variant="contained"
+                    onClick={()=>{
+                        setMode(mode==="light"?"dark":"light")
+                      }}
+                >{mode==="light"?"dark":"light"}</Button>
                 
                 </Box>
                 </Toolbar>

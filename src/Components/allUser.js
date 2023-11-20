@@ -17,28 +17,28 @@ export const allUser =[
     {
     "name": "Tracy Sanford",
     "pic": "https://icon-library.com/images/user-icon-jpg/user-icon-jpg-5.jpg",
-    "email":"Kiarra60@gmail.com",
+    "email":"kiarra60@gmail.com",
     "phone": 9129843908,
     "id": 3,
     },
     {
     "name": "Jimmie Rutherford",
     "pic": "https://icon-library.com/images/user-icon-jpg/user-icon-jpg-5.jpg",
-    "email":"Creola55@hotmail.com",
+    "email":"creola55@hotmail.com",
     "phone": 8829993908,
     "id": 4,
     },
     {
     "name": "Alonzo Ferry",
     "pic": "https://icon-library.com/images/user-icon-jpg/user-icon-jpg-5.jpg",
-    "email":"MyrtleGold@hotmail.com",
+    "email":"myrtleGold@hotmail.com",
     "phone": 8826547408,
     "id": 5,
     },
     {
     "name": "Shelia Lynch",
-    "email":"Lauren.Bode9@hotmail.com",
     "pic": "https://icon-library.com/images/user-icon-jpg/user-icon-jpg-5.jpg",
+    "email":"lauren.Bode9@hotmail.com",
     "phone": 8729877743,
     "id": 6,
     }
