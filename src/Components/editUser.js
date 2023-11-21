@@ -104,7 +104,7 @@ const EditUserForm = ({user})=>{
        onClick={()=>{ 
                 updateUser(user.id)
              }}
-       >Update User</Button>  
+       >Update Profile</Button>  
 
       <Button sx={{marginLeft:"-50%", width: "8.5%"}}  
        variant="contained"
