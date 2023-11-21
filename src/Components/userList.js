@@ -5,10 +5,11 @@ import { useState } from "react"
 import IconButton, { iconButtonClasses } from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
+import { useNavigate } from "react-router-dom"
 const UserList=()=>{
-    
+  const navigate = useNavigate()
   const [userList,setUserList]=useState([])
-    console.log(userList)
+    // console.log(userList)
     const getUser=()=>{
       fetch("https://655b7db6ab37729791a9329c.mockapi.io/usercrud")
       .then((data)=>data.json())     
@@ -23,6 +24,13 @@ const UserList=()=>{
       .then((res)=>{getUser()})
     }
 
+    // const editUser=(id)=>{
+    //   fetch(`https://655b7db6ab37729791a9329c.mockapi.io/usercrud/${id}`, {method:"DELETE"}
+    //   )
+    //   .then((data)=>data.json())     
+    //   .then((res)=>{getUser()})
+    // }
+
     useEffect(()=>{
         getUser()
             },[])  
@@ -35,7 +43,7 @@ const UserList=()=>{
         userList.map((element,index)=>
            
              {
-              console.log(element.id)
+              // console.log(element.id)
             return <User  {...element} key ={index} 
              deleteButton={
               <IconButton aria-label="delete">
@@ -46,10 +54,14 @@ const UserList=()=>{
               />
               </IconButton>
              } 
-             editButton={
+             editButton={ 
               <IconButton aria-label="delete" color="success">
-              <EditIcon />
-              </IconButton>
+              <EditIcon 
+               onClick={()=>{
+                navigate(`/edit/${element.id}`)
+               }}
+              />
+              </IconButton> 
 
              } 
              />

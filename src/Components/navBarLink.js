@@ -44,11 +44,11 @@ import { useNavigate } from 'react-router-dom';
                       }}
                 >Add User</Button>
 
-                <Button variant="contained"
+                {/* <Button variant="contained"
                     onClick={()=>{
                         navigate('/edituser')
                       }}
-                >Edit User</Button>
+                >Edit User</Button> */}
 
                 <Button variant="contained"
                     onClick={()=>{

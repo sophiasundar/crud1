@@ -33,7 +33,7 @@ const User =({name,pic,email,phone,id,deleteButton,editButton}) =>{
                  <CardContent>
           <Typography paragraph>Email: {email}</Typography>
           <Typography paragraph>Phone.no: {phone}</Typography>
-               {editButton}
+                {editButton}
                 {deleteButton}
                
         </CardContent>

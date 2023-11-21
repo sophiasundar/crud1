@@ -6,7 +6,7 @@ import Navbarlink from './Components/navBarLink';
 import { useState } from 'react';
 import { allUser } from './Components/allUser';
 import { Navigate, Route, Routes } from 'react-router';
-import EditUser from './Components/editUser';
+import {EditUser} from './Components/editUser';
 import NotFound from './Components/notFound';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 function App() {
@@ -32,7 +32,7 @@ function App() {
                    {/* <AddUser setuserList={setuserList} userList={userList} /> */}
         <Route exact path= "/adduser" element= {<AddUser setuserList={setuserList} userList={userList} />}/>
        
-        <Route exact path= "/edituser" element= {<EditUser/>}/>
+        <Route exact path= "/edit/:id" element= {<EditUser/>}/>
  
         <Route path="/404" element={<NotFound/>}/>
         <Route path='*' element = {<Navigate replace to='/404'/>}/>

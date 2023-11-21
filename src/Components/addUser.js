@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import Button from '@mui/material/Button'
 
 
 const AddUser = ({setuserList,userList})=>{
@@ -13,6 +13,26 @@ const AddUser = ({setuserList,userList})=>{
      const [email,setEmail] = useState("")
      const [phone,setPhone] = useState("")
      const navigate = useNavigate()
+   
+
+
+     const addUser=()=>{
+      const user= {
+          name: name,
+                pic,
+                email,
+                phone
+        }
+          console.log(user)
+
+          fetch('https://655b7db6ab37729791a9329c.mockapi.io/usercrud',{
+            method:"POST",
+            body:JSON.stringify(user),
+            headers:{
+              "Content-Type":"application/json"
+            }
+          }).then(()=>navigate('/'))
+     }
     return(
       <>
          <Box
@@ -58,16 +78,17 @@ const AddUser = ({setuserList,userList})=>{
         
       <Button sx={{marginRight:"200%"}} 
        variant="contained"
-       onClick={()=>{
-          const user= {
-            name: name,
-                  pic,
-                  email,
-                  phone
-          }
-            console.log(user)
-            setuserList([...userList,user])
-            console.log(userList)
+       onClick={()=>{ addUser()
+          // const user= {
+          //   name: name,
+          //         pic,
+          //         email,
+          //         phone
+          // }
+          //   console.log(user)
+            // setuserList([...userList,user])
+            // console.log(userList)
+             
        }}
        >Add User</Button>  
 
