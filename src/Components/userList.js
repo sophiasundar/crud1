@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { allUser } from "./allUser"
 import User from "./user"
 import { useState } from "react"
-import IconButton, { iconButtonClasses } from '@mui/material/IconButton';
+import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { useNavigate } from "react-router-dom"
@@ -74,4 +74,4 @@ const UserList=()=>{
     ) 
 }
 
-export default UserList
+export default UserList;
